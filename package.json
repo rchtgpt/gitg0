@@ -1,0 +1,33 @@
+{
+  "name": "gitgo",
+  "version": "1.0.0",
+  "description": "a magnificent tool to auto-suggest everything you need before pushing a git commit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotrachit/gitgo.git"
+  },
+  "keywords": [
+    "Git",
+    "CLI"
+  ],
+  "author": "Rachit Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotrachit/gitgo/issues"
+  },
+  "homepage": "https://github.com/dotrachit/gitgo#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "cowsay": "^1.4.0",
+    "figlet": "^1.5.0",
+    "git-remote-origin-url": "^3.1.0",
+    "inquirer": "^7.3.3",
+    "minimist": "^1.2.5",
+    "path": "^0.12.7"
+  }
+}
