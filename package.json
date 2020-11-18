@@ -21,13 +21,14 @@
   },
   "homepage": "https://github.com/dotrachit/gitgo#readme",
   "dependencies": {
+    "axios": "^0.21.0",
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
     "cowsay": "^1.4.0",
     "figlet": "^1.5.0",
     "git-remote-origin-url": "^3.1.0",
     "inquirer": "^7.3.3",
-    "minimist": "^1.2.5",
+    "node-emoji": "^1.10.0",
     "path": "^0.12.7"
   }
 }
