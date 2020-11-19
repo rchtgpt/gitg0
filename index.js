@@ -6,9 +6,9 @@ const { getQuestions } = require('./lib/inquirer.js');
 
 clear();
 
-// displays Gitgo on start
+// displays Gitg0 on start
 if (files.directoryExists('.git')) {
-    console.log(figlet.textSync('Gitgo', {
+    console.log(figlet.textSync('Gitg0', {
         horizontalLayout: 'default',
         verticalLayout: 'default',
     }), '\n');

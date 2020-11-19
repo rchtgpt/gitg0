@@ -1,5 +1,5 @@
 {
-  "name": "gitgo",
+  "name": "gitg0",
   "version": "1.0.0",
   "description": "a magnificent tool to auto-suggest everything you need before pushing a git commit.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dotrachit/gitgo.git"
+    "url": "git+https://github.com/dotrachit/gitg0.git"
   },
   "keywords": [
     "Git",
@@ -17,9 +17,9 @@
   "author": "Rachit Gupta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dotrachit/gitgo/issues"
+    "url": "https://github.com/dotrachit/gitg0/issues"
   },
-  "homepage": "https://github.com/dotrachit/gitgo#readme",
+  "homepage": "https://github.com/dotrachit/gitg0#readme",
   "dependencies": {
     "axios": "^0.21.0",
     "chalk": "^4.1.0",
