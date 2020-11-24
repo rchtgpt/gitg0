@@ -1,30 +1,37 @@
 {
-	"current_issue": {
-		"number": "8",
-		"labels": ["enhancement", "test label"],
-		"title": "Add a feature to suggest commit messages"
-	},
-	"commit_guidelines": ["fix:", "feat:", "docs:"],
-	"custom_guidelines": false,
-	"selected_commit_type": "",
-	"emojis": {
-		"initial_commit": "tada",
-		"feature": "sparkles",
-		"ui": "art",
-		"code_quality": "package",
-		"performance": "racehorse",
-		"security": "lock",
-		"config": "wrench",
-		"accessibility": "wheelchair",
-		"dev_tools": "rocket",
-		"docs": "pencil",
-		"release": "gem",
-		"bug_fix": "bug",
-		"crash": "boom",
-		"cleanup": "fire",
-		"wip": "construction"
-	},
-	"current_branch": "",
-	"current_emoji": "",
-	"current_commit_message": ""
+  "current_issue": {
+    "number": "8",
+    "labels": [
+      "enhancement",
+      "test label"
+    ],
+    "title": "Add a feature to suggest commit messages"
+  },
+  "commit_guidelines": [
+    "fix:",
+    "feat:",
+    "docs:"
+  ],
+  "custom_guidelines": false,
+  "selected_commit_type": "🎉 Initial commit",
+  "emojis": {
+    "initial_commit": "tada",
+    "feature": "sparkles",
+    "ui": "art",
+    "code_quality": "package",
+    "performance": "racehorse",
+    "security": "lock",
+    "config": "wrench",
+    "accessibility": "wheelchair",
+    "dev_tools": "rocket",
+    "docs": "pencil",
+    "release": "gem",
+    "bug_fix": "bug",
+    "crash": "boom",
+    "cleanup": "fire",
+    "wip": "construction"
+  },
+  "existing_branches": [],
+  "current_emoji": "",
+  "current_commit_message": ""
 }
