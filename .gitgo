@@ -1,19 +1,16 @@
 {
   "current_issue": {
-    "number": "8",
-    "labels": [
-      "enhancement",
-      "test label"
-    ],
-    "title": "Add a feature to suggest commit messages"
+    "number": "",
+    "labels": [],
+    "title": ""
   },
   "commit_guidelines": [
     "fix:",
-    "feat:",
-    "docs:"
+    " feat:",
+    " chore:"
   ],
   "custom_guidelines": false,
-  "selected_commit_type": "🎉 Initial commit",
+  "selected_commit_type": "",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -33,6 +30,6 @@
   },
   "existing_branches": [],
   "current_branch": "",
-  "current_emoji": "",
-  "current_commit_message": ""
+  "current_commit_message": "",
+  "use_emojis": false
 }
