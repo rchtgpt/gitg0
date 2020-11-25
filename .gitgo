@@ -1,16 +1,16 @@
 {
   "current_issue": {
-    "number": "",
-    "labels": [],
-    "title": ""
+    "number": "12",
+    "labels": [
+      "bug"
+    ],
+    "title": "Add dynamic username"
   },
   "commit_guidelines": [
-    "fix:",
-    "feat:",
-    "chore:"
+    "fix #"
   ],
   "custom_guidelines": false,
-  "selected_commit_type": "✨ Adding a new user-facing feature",
+  "selected_commit_type": "🐛 Fixing a bug",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -29,7 +29,9 @@
     "wip": "construction"
   },
   "existing_branches": [],
-  "current_branch": "",
-  "current_commit_message": "",
-  "use_emojis": false
+  "current_branch": [
+    "username"
+  ],
+  "current_commit_message": "🐛 fix #12 Add dynamic username",
+  "use_emojis": true
 }
