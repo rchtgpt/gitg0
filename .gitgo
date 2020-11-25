@@ -1,17 +1,18 @@
 {
   "current_issue": {
-    "number": "39",
+    "number": "22",
     "labels": [
-      "cli"
+      "cli",
+      "enhancement"
     ],
-    "title": "Create commands for checking out and committing"
+    "title": "Emoji top 3 recommendations"
   },
   "commit_guidelines": [
     "cli:",
     "general:"
   ],
   "custom_guidelines": true,
-  "selected_commit_type": "✨ Adding a new user-facing feature",
+  "selected_commit_type": "🎨 Improving UI",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -30,12 +31,14 @@
     "wip": "construction"
   },
   "existing_branches": [
+    "commands",
+    "issuetype-rec",
     "main",
     "readme"
   ],
   "current_branch": [
-    "commands"
+    "cli-commands"
   ],
-  "current_commit_message": "✨ cli: Create commands for checking out and committing",
+  "current_commit_message": "✨ cli: Add cli commands for config and startup",
   "use_emojis": true
 }
