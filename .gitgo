@@ -1,15 +1,16 @@
 {
   "current_issue": {
-    "number": "",
-    "labels": [],
-    "title": ""
+    "number": "39",
+    "labels": [
+      "cli"
+    ],
+    "title": "Create commands for checking out and committing"
   },
   "commit_guidelines": [
-    "fix:",
-    "feat:",
-    "chore:"
+    "cli:",
+    "general:"
   ],
-  "custom_guidelines": false,
+  "custom_guidelines": true,
   "selected_commit_type": "✨ Adding a new user-facing feature",
   "emojis": {
     "initial_commit": "tada",
@@ -28,8 +29,13 @@
     "cleanup": "fire",
     "wip": "construction"
   },
-  "existing_branches": [],
-  "current_branch": "",
-  "current_commit_message": "",
-  "use_emojis": false
+  "existing_branches": [
+    "main",
+    "readme"
+  ],
+  "current_branch": [
+    "commands"
+  ],
+  "current_commit_message": "✨ cli: Create commands for checking out and committing",
+  "use_emojis": true
 }
