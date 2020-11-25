@@ -6,11 +6,11 @@
   },
   "commit_guidelines": [
     "fix:",
-    " feat:",
-    " chore:"
+    "feat:",
+    "chore:"
   ],
   "custom_guidelines": false,
-  "selected_commit_type": "",
+  "selected_commit_type": "✨ Adding a new user-facing feature",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
