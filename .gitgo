@@ -12,7 +12,7 @@
     "general:"
   ],
   "custom_guidelines": true,
-  "selected_commit_type": "🎨 Improving UI",
+  "selected_commit_type": "✨ Adding a new user-facing feature",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -37,8 +37,8 @@
     "readme"
   ],
   "current_branch": [
-    "cli-commands"
+    "Emoji-recommendations"
   ],
-  "current_commit_message": "✨ cli: Add cli commands for config and startup",
+  "current_commit_message": "✨ cli: Emoji top 3 recommendations",
   "use_emojis": true
 }
