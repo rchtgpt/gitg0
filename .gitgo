@@ -1,37 +1,31 @@
 {
-  "current_issue": {
-    "number": "12",
-    "labels": [
-      "bug"
-    ],
-    "title": "Add dynamic username"
-  },
-  "commit_guidelines": [
-    "fix #"
-  ],
-  "custom_guidelines": false,
-  "selected_commit_type": "🐛 Fixing a bug",
-  "emojis": {
-    "initial_commit": "tada",
-    "feature": "sparkles",
-    "ui": "art",
-    "code_quality": "package",
-    "performance": "racehorse",
-    "security": "lock",
-    "config": "wrench",
-    "accessibility": "wheelchair",
-    "dev_tools": "rocket",
-    "docs": "pencil",
-    "release": "gem",
-    "bug_fix": "bug",
-    "crash": "boom",
-    "cleanup": "fire",
-    "wip": "construction"
-  },
-  "existing_branches": [],
-  "current_branch": [
-    "username"
-  ],
-  "current_commit_message": "🐛 fix #12 Add dynamic username",
-  "use_emojis": true
+	"current_issue": {
+		"number": "",
+		"labels": [],
+		"title": ""
+	},
+	"commit_guidelines": [],
+	"custom_guidelines": false,
+	"selected_commit_type": "",
+	"emojis": {
+		"initial_commit": "tada",
+		"feature": "sparkles",
+		"ui": "art",
+		"code_quality": "package",
+		"performance": "racehorse",
+		"security": "lock",
+		"config": "wrench",
+		"accessibility": "wheelchair",
+		"dev_tools": "rocket",
+		"docs": "pencil",
+		"release": "gem",
+		"bug_fix": "bug",
+		"crash": "boom",
+		"cleanup": "fire",
+		"wip": "construction"
+	},
+	"existing_branches": [],
+	"current_branch": "",
+	"current_commit_message": "",
+	"use_emojis": false
 }
