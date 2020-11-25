@@ -1,41 +1,31 @@
 {
-  "current_issue": {
-    "number": "39",
-    "labels": [
-      "cli"
-    ],
-    "title": "Create commands for checking out and committing"
-  },
-  "commit_guidelines": [
-    "cli:",
-    "general:"
-  ],
-  "custom_guidelines": true,
-  "selected_commit_type": "✨ Adding a new user-facing feature",
-  "emojis": {
-    "initial_commit": "tada",
-    "feature": "sparkles",
-    "ui": "art",
-    "code_quality": "package",
-    "performance": "racehorse",
-    "security": "lock",
-    "config": "wrench",
-    "accessibility": "wheelchair",
-    "dev_tools": "rocket",
-    "docs": "pencil",
-    "release": "gem",
-    "bug_fix": "bug",
-    "crash": "boom",
-    "cleanup": "fire",
-    "wip": "construction"
-  },
-  "existing_branches": [
-    "main",
-    "readme"
-  ],
-  "current_branch": [
-    "commands"
-  ],
-  "current_commit_message": "✨ cli: Create commands for checking out and committing",
-  "use_emojis": true
+	"current_issue": {
+		"number": "",
+		"labels": [],
+		"title": ""
+	},
+	"commit_guidelines": [],
+	"custom_guidelines": false,
+	"selected_commit_type": "",
+	"emojis": {
+		"initial_commit": "tada",
+		"feature": "sparkles",
+		"ui": "art",
+		"code_quality": "package",
+		"performance": "racehorse",
+		"security": "lock",
+		"config": "wrench",
+		"accessibility": "wheelchair",
+		"dev_tools": "rocket",
+		"docs": "pencil",
+		"release": "gem",
+		"bug_fix": "bug",
+		"crash": "boom",
+		"cleanup": "fire",
+		"wip": "construction"
+	},
+	"existing_branches": [],
+	"current_branch": "",
+	"current_commit_message": "",
+	"use_emojis": false
 }
