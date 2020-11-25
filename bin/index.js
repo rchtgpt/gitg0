@@ -97,7 +97,7 @@ program
             }
             bName = conf.current_branch;
             git.checkoutLocalBranch(bName);
-            console.log("Checked out to nee branch: " + bName);
+            console.log("Checked out to new branch: " + bName);
         });
     } else {
         // checks if the directory is a git based repo or not
