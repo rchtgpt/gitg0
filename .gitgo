@@ -1,11 +1,11 @@
 {
   "current_issue": {
-    "number": "23",
+    "number": "22",
     "labels": [
-      "bug",
-      "cli"
+      "cli",
+      "enhancement"
     ],
-    "title": "Fix dependencies issue"
+    "title": "Emoji top 3 recommendations"
   },
   "commit_guidelines": [
     "cli:",
