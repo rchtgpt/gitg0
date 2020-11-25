@@ -1,16 +1,17 @@
 {
   "current_issue": {
-    "number": "22",
+    "number": "37",
     "labels": [
       "cli",
+      "command",
       "enhancement"
     ],
-    "title": "Emoji top 3 recommendations"
+    "title": "Store the branch name and commit message in gitgo"
   },
   "commit_guidelines": [
     "cli:",
     "general:"
-  ],
+  ],23
   "custom_guidelines": true,
   "selected_commit_type": "✨ Adding a new user-facing feature",
   "emojis": {
