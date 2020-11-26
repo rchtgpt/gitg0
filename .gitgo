@@ -1,31 +1,39 @@
 {
-	"current_issue": {
-		"number": "",
-		"labels": [],
-		"title": ""
-	},
-	"commit_guidelines": [],
-	"custom_guidelines": false,
-	"selected_commit_type": "",
-	"emojis": {
-		"initial_commit": "tada",
-		"feature": "sparkles",
-		"ui": "art",
-		"code_quality": "package",
-		"performance": "racehorse",
-		"security": "lock",
-		"config": "wrench",
-		"accessibility": "wheelchair",
-		"dev_tools": "rocket",
-		"docs": "pencil",
-		"release": "gem",
-		"bug_fix": "bug",
-		"crash": "boom",
-		"cleanup": "fire",
-		"wip": "construction"
-	},
-	"existing_branches": [],
-	"current_branch": "",
-	"current_commit_message": "",
-	"use_emojis": false
+  "current_issue": {
+    "number": "43",
+    "labels": [
+      "cli"
+    ],
+    "title": "Change suggested text color to green"
+  },
+  "commit_guidelines": [],
+  "custom_guidelines": false,
+  "selected_commit_type": "🎨 Improving UI",
+  "emojis": {
+    "initial_commit": "tada",
+    "feature": "sparkles",
+    "ui": "art",
+    "code_quality": "package",
+    "performance": "racehorse",
+    "security": "lock",
+    "config": "wrench",
+    "accessibility": "wheelchair",
+    "dev_tools": "rocket",
+    "docs": "pencil",
+    "release": "gem",
+    "bug_fix": "bug",
+    "crash": "boom",
+    "cleanup": "fire",
+    "wip": "construction"
+  },
+  "existing_branches": [
+    "commands",
+    "fix-commit",
+    "issuetype-rec",
+    "main",
+    "readme"
+  ],
+  "current_branch": "recommendation-text-color",
+  "current_commit_message": ":art: cli: change recommended text color to green\n",
+  "use_emojis": false
 }
