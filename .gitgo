@@ -1,18 +1,14 @@
 {
   "current_issue": {
-    "number": "45",
+    "number": "43",
     "labels": [
-      "cli",
-      "command"
+      "cli"
     ],
-    "title": "Capitalizing the default value on pressing enter"
+    "title": "Change suggested text color to green"
   },
-  "commit_guidelines": [
-    "cli: ",
-    "general:"
-  ],
-  "custom_guidelines": true,
-  "selected_commit_type": "📝 Writing docs",
+  "commit_guidelines": [],
+  "custom_guidelines": false,
+  "selected_commit_type": "🎨 Improving UI",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
