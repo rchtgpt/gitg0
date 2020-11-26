@@ -21,6 +21,6 @@ jobs:
       uses: creyD/prettier_action@v3.1
       with:
         prettier_options: --write **/*.{js,md}
-        commit_message: :wrench: general: Fix linting with prettier
+        commit_message: ":wrench: general: Fix linting with prettier"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
