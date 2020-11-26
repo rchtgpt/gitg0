@@ -1,14 +1,19 @@
 {
   "current_issue": {
-    "number": "43",
+    "number": "20",
     "labels": [
-      "cli"
+      "cli",
+      "enhancement"
     ],
-    "title": "Change suggested text color to green"
+    "title": "Add branch name & commit message suggestions "
   },
-  "commit_guidelines": [],
+  "commit_guidelines": [
+    "fix:",
+    " feat:",
+    " chore:"
+  ],
   "custom_guidelines": false,
-  "selected_commit_type": "🎨 Improving UI",
+  "selected_commit_type": "🐎 Improving performance",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -27,14 +32,16 @@
     "wip": "construction"
   },
   "existing_branches": [
-    "commands",
-    "fix-commit",
     "issuetype-rec",
     "main",
-    "readme",
-    "recommendation-text-color"
+    "notice",
+    "readme"
   ],
-  "current_branch": "capitalizing-default-value",
-  "current_commit_message": ":pencil: cli: Capitalizing default value on pressing enter",
+  "current_branch": [
+    "branch-name",
+    "branch-name",
+    "message-suggestions"
+  ],
+  "current_commit_message": "🐎 chore: Add branch name & commit message suggestions ",
   "use_emojis": true
 }
