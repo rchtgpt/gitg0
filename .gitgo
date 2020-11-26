@@ -12,7 +12,7 @@
     "general:"
   ],
   "custom_guidelines": true,
-  "selected_commit_type": "🎨 Improving UI",
+  "selected_commit_type": "💥 Fixing a crash",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
