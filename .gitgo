@@ -31,9 +31,10 @@
     "fix-commit",
     "issuetype-rec",
     "main",
-    "readme"
+    "readme",
+    "recommendation-text-color"
   ],
-  "current_branch": "recommendation-text-color",
-  "current_commit_message": ":art: cli: change recommended text color to green\n",
-  "use_emojis": false
+  "current_branch": "capitalizing-default-value",
+  "current_commit_message": ":pencil: cli: Capitalizing default value on pressing enter",
+  "use_emojis": true
 }
