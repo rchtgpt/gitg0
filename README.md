@@ -25,7 +25,7 @@ Fear no more, gitg0 is here! With gitg0, you can setup a `.gitgo` file and choos
 Head over [here](https://github.com/dotrachit/gitg0/tree/readme#-usage) for instructions on how to do the one time gitgo setup 🎁
 
 ## 👨‍🏭 Who are we?
-This project was built by [Preet Shah](https://github.com/shahpreetk), [Shambhavi Aggarwal](https://github.com/agg-shambhavi), [Rachit Gutpa](https://github.com/dotrachit) and [Yash Khare](https://github.com/yashk2000).
+This project was built by [Preet Shah](https://github.com/shahpreetk), [Shambhavi Aggarwal](https://github.com/agg-shambhavi), [Rachit Gupta](https://github.com/dotrachit) and [Yash Khare](https://github.com/yashk2000).
 
 ## 💻 What did we use?
 
