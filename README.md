@@ -14,7 +14,7 @@ gitg0 is a command line tool which makes lives of both project maintainers and c
 Well, gitg0 takes care of all this and much more!
 You just need to enter the number of the issue you're working on, and select what kind of issue it is, whether a new feature, ui refactors, documentation, security fixes, etc. gitg0 will do the rest for you. The tool will automatically suggest a branch name, and a commit message as well along with an appropriate emoji if you want one!
 
-Head over [here]() for instructions on how to use gitg0 🎁
+Head over [here](https://github.com/dotrachit/gitg0/tree/readme#-usage) for instructions on how to use gitg0 🎁
 
 ### For maintainers 👩‍🔧
 
@@ -22,7 +22,7 @@ Tired of telling contributors to follow proper commit guidelines? 😫
 
 Fear no more, gitg0 is here! With gitg0, you can setup a `.gitgo` file and choose exactly what commit guidelines your project follows. You want an emoji? We got you covered. You want to enter a custom set of guidelines? We provide an option for that as well. Just eenter the format in which you want your commits to be, and that is the format in which the commit message that will be shown to contributors when they want to make a commit. 
 
-Head over [here]() for instructions on how to do the one time gitgo setup 🎁
+Head over [here](https://github.com/dotrachit/gitg0/tree/readme#-usage) for instructions on how to do the one time gitgo setup 🎁
 
 ## 👨‍🏭 Who are we?
 This project was built by [Preet Shah](https://github.com/shahpreetk), [Shambhavi Aggarwal](https://github.com/agg-shambhavi), [Rachit Gutpa](https://github.com/dotrachit) and [Yash Khare](https://github.com/yashk2000).
