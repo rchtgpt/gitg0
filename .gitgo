@@ -1,12 +1,10 @@
 {
   "current_issue": {
-    "number": "21",
+    "number": "41",
     "labels": [
-      "cli",
-      "command",
-      "enhancement"
+      "bug"
     ],
-    "title": "Add cli commands for config and startup"
+    "title": "Fix commit message suggestion for standard template"
   },
   "commit_guidelines": [
     "fix:",
@@ -14,7 +12,7 @@
     " chore:"
   ],
   "custom_guidelines": false,
-  "selected_commit_type": "🎨 Improving UI",
+  "selected_commit_type": "🐎 Improving performance",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -32,18 +30,10 @@
     "cleanup": "fire",
     "wip": "construction"
   },
-  "existing_branches": [
-    "capitalizing-default-value",
-    "commands",
-    "fix-commit",
-    "issuetype-rec",
-    "main",
-    "readme",
-    "recommendation-text-color"
-  ],
+  "existing_branches": [],
   "current_branch": [
-    "cli-commands"
+    "message-suggestion"
   ],
-  "current_commit_message": "🎨 feat: Add cli commands for config and startup",
+  "current_commit_message": "🐎 chore: Fix commit message suggestion for standard template",
   "use_emojis": true
 }
