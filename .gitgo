@@ -1,31 +1,44 @@
 {
-	"current_issue": {
-		"number": "",
-		"labels": [],
-		"title": ""
-	},
-	"commit_guidelines": [],
-	"custom_guidelines": false,
-	"selected_commit_type": "",
-	"emojis": {
-		"initial_commit": "tada",
-		"feature": "sparkles",
-		"ui": "art",
-		"code_quality": "package",
-		"performance": "racehorse",
-		"security": "lock",
-		"config": "wrench",
-		"accessibility": "wheelchair",
-		"dev_tools": "rocket",
-		"docs": "pencil",
-		"release": "gem",
-		"bug_fix": "bug",
-		"crash": "boom",
-		"cleanup": "fire",
-		"wip": "construction"
-	},
-	"existing_branches": [],
-	"current_branch": "",
-	"current_commit_message": "",
-	"use_emojis": false
+  "current_issue": {
+    "number": "45",
+    "labels": [
+      "cli",
+      "command"
+    ],
+    "title": "Capitalizing the default value on pressing enter"
+  },
+  "commit_guidelines": [
+    "cli: ",
+    "general:"
+  ],
+  "custom_guidelines": true,
+  "selected_commit_type": "📝 Writing docs",
+  "emojis": {
+    "initial_commit": "tada",
+    "feature": "sparkles",
+    "ui": "art",
+    "code_quality": "package",
+    "performance": "racehorse",
+    "security": "lock",
+    "config": "wrench",
+    "accessibility": "wheelchair",
+    "dev_tools": "rocket",
+    "docs": "pencil",
+    "release": "gem",
+    "bug_fix": "bug",
+    "crash": "boom",
+    "cleanup": "fire",
+    "wip": "construction"
+  },
+  "existing_branches": [
+    "commands",
+    "fix-commit",
+    "issuetype-rec",
+    "main",
+    "readme",
+    "recommendation-text-color"
+  ],
+  "current_branch": "capitalizing-default-value",
+  "current_commit_message": ":pencil: cli: Capitalizing default value on pressing enter",
+  "use_emojis": true
 }
