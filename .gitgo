@@ -1,10 +1,11 @@
 {
   "current_issue": {
-    "number": "41",
+    "number": "22",
     "labels": [
-      "bug"
+      "cli",
+      "enhancement"
     ],
-    "title": "Fix commit message suggestion for standard template"
+    "title": "Emoji top 3 recommendations"
   },
   "commit_guidelines": [
     "fix:",
@@ -12,7 +13,7 @@
     " chore:"
   ],
   "custom_guidelines": false,
-  "selected_commit_type": "🐎 Improving performance",
+  "selected_commit_type": "✨ Adding a new user-facing feature",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -30,10 +31,15 @@
     "cleanup": "fire",
     "wip": "construction"
   },
-  "existing_branches": [],
-  "current_branch": [
-    "message-suggestion"
+  "existing_branches": [
+    "issuetype-rec",
+    "main",
+    "notice",
+    "readme"
   ],
-  "current_commit_message": "🐎 chore: Fix commit message suggestion for standard template",
+  "current_branch": [
+    "Emoji-recommendations"
+  ],
+  "current_commit_message": "✨ feat: Emoji top 3 recommendations",
   "use_emojis": true
 }
