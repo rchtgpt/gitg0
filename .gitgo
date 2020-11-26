@@ -1,11 +1,11 @@
 {
   "current_issue": {
-    "number": "22",
+    "number": "20",
     "labels": [
       "cli",
       "enhancement"
     ],
-    "title": "Emoji top 3 recommendations"
+    "title": "Add branch name & commit message suggestions "
   },
   "commit_guidelines": [
     "fix:",
@@ -13,7 +13,7 @@
     " chore:"
   ],
   "custom_guidelines": false,
-  "selected_commit_type": "✨ Adding a new user-facing feature",
+  "selected_commit_type": "🐎 Improving performance",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -38,8 +38,10 @@
     "readme"
   ],
   "current_branch": [
-    "Emoji-recommendations"
+    "branch-name",
+    "branch-name",
+    "message-suggestions"
   ],
-  "current_commit_message": "✨ feat: Emoji top 3 recommendations",
+  "current_commit_message": "🐎 chore: Add branch name & commit message suggestions ",
   "use_emojis": true
 }
