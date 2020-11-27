@@ -1,17 +1,18 @@
 {
   "current_issue": {
-    "number": "53",
+    "number": "",
     "labels": [
-      "cli",
-      "enhancement"
+      ""
     ],
-    "title": "Empty specific attributes from .gitgo before pushing it on github"
+    "title": ""
   },
   "commit_guidelines": [
-    "fix #"
+    "fix:",
+    " feat:",
+    " chore:"
   ],
   "custom_guidelines": false,
-  "selected_commit_type": "♿ Improving accessibility",
+  "selected_commit_type": "",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -30,14 +31,12 @@
     "wip": "construction"
   },
   "existing_branches": [
-    "main",
-    "test-branch-gen",
-    "test-commit-gen"
+    ""
   ],
   "current_branch": [
-    "Empty-attributes-github"
+    ""
   ],
-  "current_commit_message": "♿ fix #53 Empty specific attributes from .gitgo before pushing it on github",
+  "current_commit_message": "",
   "use_emojis": true,
   "commit_config": false
 }
