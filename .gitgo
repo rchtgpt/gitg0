@@ -1,18 +1,18 @@
 {
   "current_issue": {
-    "number": "51",
+    "number": "21",
     "labels": [
       "cli",
       "command",
       "enhancement"
     ],
-    "title": "Add a command to give summary of all instructions"
+    "title": "Add cli commands for config and startup"
   },
   "commit_guidelines": [
-    "cli:"
+    "fix #"
   ],
-  "custom_guidelines": true,
-  "selected_commit_type": "✨ Adding a new user-facing feature",
+  "custom_guidelines": false,
+  "selected_commit_type": "🐎 Improving performance",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -31,11 +31,13 @@
     "wip": "construction"
   },
   "existing_branches": [
-    "main"
+    "Empty-attributes-github",
+    "main",
+    "test-commit-gen"
   ],
   "current_branch": [
-    "command-summary-instructions"
+    "cli-commands"
   ],
-  "current_commit_message": "✨ cli: Add a command to give summary of all instructions",
+  "current_commit_message": "🔒 fix #21 Add cli commands for config and startup",
   "use_emojis": true
 }
