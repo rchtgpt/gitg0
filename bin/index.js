@@ -162,22 +162,18 @@ program
           conf.current_issue.number = "";
           conf.current_issue.labels = [""];
           conf.current_issue.title = "";
-          fs.writeFile(
-            "./.gitgo",
-            JSON.stringify(conf, null, 2),
-            (err) => {
-              if (err) console.log("Error writing file:", err);
-            }
-          );
+          fs.writeFile("./.gitgo", JSON.stringify(conf, null, 2), (err) => {
+            if (err) console.log("Error writing file:", err);
+          });
           setTimeout(function () {
             exec("git add ./.gitgo", (error, stdout, stderr) => {
               if (error) {
-                  console.log(`error: ${error.message}`);
-                  return;
+                console.log(`error: ${error.message}`);
+                return;
               }
               if (stderr) {
-                  console.log(`stderr: ${stderr}`);
-                  return;
+                console.log(`stderr: ${stderr}`);
+                return;
               }
             });
             git.commit(cMsg);
@@ -186,12 +182,12 @@ program
         } else {
           exec("git reset -- ./.gitgo", (error, stdout, stderr) => {
             if (error) {
-                console.log(`error: ${error.message}`);
-                return;
+              console.log(`error: ${error.message}`);
+              return;
             }
             if (stderr) {
-                console.log(`stderr: ${stderr}`);
-                return;
+              console.log(`stderr: ${stderr}`);
+              return;
             }
           });
           git.commit(cMsg);
