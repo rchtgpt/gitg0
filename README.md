@@ -2,6 +2,12 @@
 
 ## 🚀 gitg0
 
+[![NPM](https://nodei.co/npm/gitg0.png)](https://npmjs.org/package/gitg0)
+
+![NodeJS CI Tests](https://github.com/dotrachit/gitg0/workflows/Node.js%20CI/badge.svg)
+![Synk](https://github.com/dotrachit/gitg0/workflows/Snyk/badge.svg)
+![Prettier Linter](https://github.com/dotrachit/gitg0/workflows/Prettier%20Linter/badge.svg)
+
 gitg0 is a command line tool which makes lives of both project maintainers and contributors easy 😌. How does gitg0 do that❓
 
 ### For contributors and developers 👨‍💻
