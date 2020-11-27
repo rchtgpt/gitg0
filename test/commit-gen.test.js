@@ -1,13 +1,11 @@
 const reader = require("../lib/funcs/jsonReader");
-const {
-  suggestCommitMsgCb
-} = require('../lib/funcs/commit-gen')
+const { suggestCommitMsgCb } = require("../lib/funcs/commit-gen");
 
-test('Suggests Commit Message Callback', () => {
-  reader.jsonReader('../.gitgo', (err, conf) => {
+test("Suggests Commit Message Callback", () => {
+  reader.jsonReader("../.gitgo", (err, conf) => {
     if (err) {
-      return
+      return;
     }
-    expect(suggestCommitMsgCb(conf).not.toBe(undefined))
-  })
-})
+    expect(suggestCommitMsgCb(conf).not.toBe(undefined));
+  });
+});
