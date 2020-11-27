@@ -194,14 +194,14 @@ program
       "\n"
     );
     console.log(
-      "There's just 5 simple commands you need to know, and then you're " +
+      "You just need to know 5 simple commands you and then you're " +
         chalk.bold.cyan("gtg") +
-        ", " +
+        ": " +
         chalk.magenta("Good to Go")
     );
     console.log(chalk.green("\ngtg config:\n"));
     console.log(
-      "This commands should be used on for the first time, while setting up the gitgo configuration. You will be asked a small set of questions regarding your commit and emoji preferences. If you would like to change these preferences sometime in future, you can run this command again to make the changes.\n"
+      "This command should be used to personalise your gitgo configuration. You can add your repository's commit and emoticon guidelines.\n"
     );
     console.log(chalk.green("\ngtg start:\n"));
     console.log(
