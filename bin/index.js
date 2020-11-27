@@ -13,6 +13,8 @@ const {
 const simpleGit = require("simple-git");
 const git = simpleGit();
 const { jsonReader } = require("../lib/funcs/jsonReader.js");
+const version = require("../package.json");
+const chalk = require("chalk");
 
 clear();
 
@@ -162,6 +164,61 @@ program
       );
       process.exit();
     }
+  });
+
+program
+  .command("version")
+  .alias("v")
+  .action(function () {
+    // displays Gitg0 on start
+    console.log(
+      figlet.textSync("Gitg0", {
+        horizontalLayout: "default",
+        verticalLayout: "default",
+      }),
+      "\n"
+    );
+    console.log("v" + version.version + "-stable");
+  });
+
+program
+  .command("whoami")
+  .alias("w")
+  .action(function () {
+    // displays Gitg0 on start
+    console.log(
+      figlet.textSync("Gitg0", {
+        horizontalLayout: "default",
+        verticalLayout: "default",
+      }),
+      "\n"
+    );
+    console.log(
+      "You just need to know 5 simple commands you and then you're " +
+        chalk.bold.cyan("gtg") +
+        ": " +
+        chalk.magenta("Good to Go")
+    );
+    console.log(chalk.green("\ngtg config:\n"));
+    console.log(
+      "This command should be used to personalise your gitgo configuration. You can add your repository's commit and emoticon guidelines.\n"
+    );
+    console.log(chalk.green("\ngtg start:\n"));
+    console.log(
+      "Everytime you start working on a new issue, just run this command in order for the tool to know which issue you're working on. After this, the tool will suggest the branch names and commit messages automatically.\n"
+    );
+    console.log(chalk.green("\ngtg display:\n"));
+    console.log(
+      "This command can be used to display the branch name and commit that the tool will be suggesting for a particular issue once gtg start has been run.\n"
+    );
+    console.log(chalk.green("\ngtg checkout:\n"));
+    console.log(
+      "This is a replacement for git checkout and will simply checkout with the suggested branch name.\n"
+    );
+    console.log(chalk.green("\ngtg checkout:\n"));
+    console.log(
+      "This is a replacement for git commit and will commit your files once added with the suggested commit message.\n"
+    );
   });
 
 program.parse(process.argv);

@@ -1,19 +1,18 @@
 {
   "current_issue": {
-    "number": "20",
+    "number": "51",
     "labels": [
       "cli",
+      "command",
       "enhancement"
     ],
-    "title": "Add branch name & commit message suggestions "
+    "title": "Add a command to give summary of all instructions"
   },
   "commit_guidelines": [
-    "fix:",
-    " feat:",
-    " chore:"
+    "cli:"
   ],
-  "custom_guidelines": false,
-  "selected_commit_type": "🐎 Improving performance",
+  "custom_guidelines": true,
+  "selected_commit_type": "✨ Adding a new user-facing feature",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -32,16 +31,11 @@
     "wip": "construction"
   },
   "existing_branches": [
-    "issuetype-rec",
-    "main",
-    "notice",
-    "readme"
+    "main"
   ],
   "current_branch": [
-    "branch-name",
-    "branch-name",
-    "message-suggestions"
+    "command-summary-instructions"
   ],
-  "current_commit_message": "🐎 chore: Add branch name & commit message suggestions ",
+  "current_commit_message": "✨ cli: Add a command to give summary of all instructions",
   "use_emojis": true
 }
