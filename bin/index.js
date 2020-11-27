@@ -59,60 +59,50 @@ program
         }),
         "\n"
       );
-      fs.stat('./.gitgo', function(err, stat) {
-        if(err == null) {
-            // asks task based questions
-            getConfigQuestions();
-        } else if (err.code === 'ENOENT') {
-            // file does not exist
-            var conf = {
-                "current_issue": {
-                  "number": "",
-                  "labels": [
-                    ""
-                  ],
-                  "title": ""
-                },
-                "commit_guidelines": [
-                  ""
-                ],
-                "custom_guidelines": false,
-                "selected_commit_type": "",
-                "emojis": {
-                  "initial_commit": "tada",
-                  "feature": "sparkles",
-                  "ui": "art",
-                  "code_quality": "package",
-                  "performance": "racehorse",
-                  "security": "lock",
-                  "config": "wrench",
-                  "accessibility": "wheelchair",
-                  "dev_tools": "rocket",
-                  "docs": "pencil",
-                  "release": "gem",
-                  "bug_fix": "bug",
-                  "crash": "boom",
-                  "cleanup": "fire",
-                  "wip": "construction"
-                },
-                "existing_branches": [],
-                "current_branch": [
-                  ""
-                ],
-                "current_commit_message": "",
-                "use_emojis": false,
-                "commit_config": false
-            };
-            fs.writeFile(
-              "./.gitgo",
-              JSON.stringify(conf, null, 2),
-              (err) => {
-                if (err) console.log("Error writing file:", err);
-              }
-            );
-            getConfigQuestions();
+      fs.stat("./.gitgo", function (err, stat) {
+        if (err == null) {
+          // asks task based questions
+          getConfigQuestions();
+        } else if (err.code === "ENOENT") {
+          // file does not exist
+          var conf = {
+            current_issue: {
+              number: "",
+              labels: [""],
+              title: "",
+            },
+            commit_guidelines: [""],
+            custom_guidelines: false,
+            selected_commit_type: "",
+            emojis: {
+              initial_commit: "tada",
+              feature: "sparkles",
+              ui: "art",
+              code_quality: "package",
+              performance: "racehorse",
+              security: "lock",
+              config: "wrench",
+              accessibility: "wheelchair",
+              dev_tools: "rocket",
+              docs: "pencil",
+              release: "gem",
+              bug_fix: "bug",
+              crash: "boom",
+              cleanup: "fire",
+              wip: "construction",
+            },
+            existing_branches: [],
+            current_branch: [""],
+            current_commit_message: "",
+            use_emojis: false,
+            commit_config: false,
+          };
+          fs.writeFile("./.gitgo", JSON.stringify(conf, null, 2), (err) => {
+            if (err) console.log("Error writing file:", err);
+          });
+          getConfigQuestions();
         } else {
-            console.log('Some other error: ', err.code);
+          console.log("Some other error: ", err.code);
         }
       });
     } else {
