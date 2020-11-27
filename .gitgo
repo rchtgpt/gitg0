@@ -1,18 +1,17 @@
 {
   "current_issue": {
-    "number": "21",
+    "number": "22",
     "labels": [
       "cli",
-      "command",
       "enhancement"
     ],
-    "title": "Add cli commands for config and startup"
+    "title": "Emoji top 3 recommendations"
   },
   "commit_guidelines": [
     "fix #"
   ],
   "custom_guidelines": false,
-  "selected_commit_type": "🐎 Improving performance",
+  "selected_commit_type": "✨ Adding a new user-facing feature",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -36,8 +35,8 @@
     "test-commit-gen"
   ],
   "current_branch": [
-    "cli-commands"
+    "Emoji-recommendations"
   ],
-  "current_commit_message": "🔒 fix #21 Add cli commands for config and startup",
+  "current_commit_message": "✨ fix #22 Emoji top 3 recommendations",
   "use_emojis": true
 }
