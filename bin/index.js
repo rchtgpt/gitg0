@@ -12,10 +12,14 @@ const {
 } = require("../lib/inquirer.js");
 const simpleGit = require("simple-git");
 const git = simpleGit();
-const { jsonReader } = require("../lib/funcs/jsonReader.js");
+const {
+  jsonReader
+} = require("../lib/funcs/jsonReader.js");
 const version = require("../package.json");
 const chalk = require("chalk");
-const { exec } = require("child_process");
+const {
+  exec
+} = require("child_process");
 const fs = require("fs");
 
 clear();
@@ -235,9 +239,9 @@ program
     );
     console.log(
       "You just need to know 5 simple commands you and then you're " +
-        chalk.bold.cyan("gtg") +
-        ": " +
-        chalk.magenta("Good to Go")
+      chalk.bold.cyan("gtg") +
+      ": " +
+      chalk.magenta("Good to Go")
     );
     console.log(chalk.green("\ngtg config:\n"));
     console.log(
