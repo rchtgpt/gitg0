@@ -1,17 +1,17 @@
 {
   "current_issue": {
-    "number": "51",
+
+    "number": "22",
     "labels": [
       "cli",
-      "command",
       "enhancement"
     ],
-    "title": "Add a command to give summary of all instructions"
+    "title": "Emoji top 3 recommendations"
   },
   "commit_guidelines": [
-    "cli:"
+    "fix #"
   ],
-  "custom_guidelines": true,
+  "custom_guidelines": false,
   "selected_commit_type": "✨ Adding a new user-facing feature",
   "emojis": {
     "initial_commit": "tada",
@@ -31,11 +31,14 @@
     "wip": "construction"
   },
   "existing_branches": [
-    "main"
+
+    "Empty-attributes-github",
+    "main",
+    "test-commit-gen"
   ],
   "current_branch": [
-    "command-summary-instructions"
+    "Emoji-recommendations"
   ],
-  "current_commit_message": "✨ cli: Add a command to give summary of all instructions",
+  "current_commit_message": "✨ fix #22 Emoji top 3 recommendations",
   "use_emojis": true
 }
