@@ -15,6 +15,8 @@ const git = simpleGit();
 const { jsonReader } = require("../lib/funcs/jsonReader.js");
 const version = require("../package.json");
 const chalk = require("chalk");
+const { exec } = require("child_process");
+const fs = require("fs");
 
 clear();
 
@@ -151,8 +153,50 @@ program
           return;
         }
         cMsg = conf.current_commit_message;
-        git.commit(cMsg);
-        console.log("Files have be commited: " + cMsg);
+        if (conf.commit_config) {
+          conf.commit_config = false;
+          conf.current_commit_message = "";
+          conf.current_branch = [""];
+          conf.existing_branches = [""];
+          conf.selected_commit_type = "";
+          conf.current_issue.number = "";
+          conf.current_issue.labels = [""];
+          conf.current_issue.title = "";
+          fs.writeFile(
+            "./.gitgo",
+            JSON.stringify(conf, null, 2),
+            (err) => {
+              if (err) console.log("Error writing file:", err);
+            }
+          );
+          setTimeout(function () {
+            exec("git add ./.gitgo", (error, stdout, stderr) => {
+              if (error) {
+                  console.log(`error: ${error.message}`);
+                  return;
+              }
+              if (stderr) {
+                  console.log(`stderr: ${stderr}`);
+                  return;
+              }
+            });
+            git.commit(cMsg);
+            console.log("Files have be commited: " + cMsg);
+          }, 1000);
+        } else {
+          exec("git reset -- ./.gitgo", (error, stdout, stderr) => {
+            if (error) {
+                console.log(`error: ${error.message}`);
+                return;
+            }
+            if (stderr) {
+                console.log(`stderr: ${stderr}`);
+                return;
+            }
+          });
+          git.commit(cMsg);
+          console.log("Files have be commited: " + cMsg);
+        }
       });
     } else {
       // checks if the directory is a git based repo or not

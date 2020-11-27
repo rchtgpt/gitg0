@@ -1,18 +1,18 @@
 {
   "current_issue": {
-    "number": "51",
+    "number": "53",
     "labels": [
       "cli",
-      "command",
       "enhancement"
     ],
-    "title": "Add a command to give summary of all instructions"
+    "title": "Empty specific attributes from .gitgo before pushing it on github"
   },
   "commit_guidelines": [
-    "cli:"
+    "cli:",
+    "general:"
   ],
   "custom_guidelines": true,
-  "selected_commit_type": "✨ Adding a new user-facing feature",
+  "selected_commit_type": "🚀 Improving dev tools",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -31,11 +31,13 @@
     "wip": "construction"
   },
   "existing_branches": [
+    "command-summary-instructions",
     "main"
   ],
   "current_branch": [
-    "command-summary-instructions"
+    "Empty-attributes-github"
   ],
-  "current_commit_message": "✨ cli: Add a command to give summary of all instructions",
-  "use_emojis": true
+  "current_commit_message": "🚀 cli: Empty specific attributes from .gitgo before pushing it on github",
+  "use_emojis": true,
+  "commit_config": false
 }
