@@ -47,6 +47,10 @@ npm i gitg0
 
 Currently, we have the following 6 commands which will make you **Good To Go**, `gtg`:
 
+### `gtg version`
+
+It displays the version of your install gitg0 package.
+
 ### `gtg whoami`
 
 As the name suggests this command will help you know what the tool does and how to use the commands right from your terminal.
