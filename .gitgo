@@ -1,5 +1,6 @@
 {
   "current_issue": {
+
     "number": "22",
     "labels": [
       "cli",
@@ -30,6 +31,7 @@
     "wip": "construction"
   },
   "existing_branches": [
+
     "Empty-attributes-github",
     "main",
     "test-commit-gen"
