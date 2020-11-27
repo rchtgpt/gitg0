@@ -1,18 +1,18 @@
 {
   "current_issue": {
-    "number": "53",
+
+    "number": "22",
     "labels": [
       "cli",
       "enhancement"
     ],
-    "title": "Empty specific attributes from .gitgo before pushing it on github"
+    "title": "Emoji top 3 recommendations"
   },
   "commit_guidelines": [
-    "cli:",
-    "general:"
+    "fix #"
   ],
-  "custom_guidelines": true,
-  "selected_commit_type": "🚀 Improving dev tools",
+  "custom_guidelines": false,
+  "selected_commit_type": "✨ Adding a new user-facing feature",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -31,13 +31,14 @@
     "wip": "construction"
   },
   "existing_branches": [
-    "command-summary-instructions",
-    "main"
+
+    "Empty-attributes-github",
+    "main",
+    "test-commit-gen"
   ],
   "current_branch": [
-    "Empty-attributes-github"
+    "Emoji-recommendations"
   ],
-  "current_commit_message": "🚀 cli: Empty specific attributes from .gitgo before pushing it on github",
-  "use_emojis": true,
-  "commit_config": false
+  "current_commit_message": "✨ fix #22 Emoji top 3 recommendations",
+  "use_emojis": true
 }
