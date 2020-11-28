@@ -46,7 +46,7 @@ Before installing the package, [download and install Node.js](https://nodejs.org
 Then you can install it by simple running the following command:
 
 ```bash
-npm i gitg0
+npm i -g gitg0
 ```
 
 ## 🎮 Usage
