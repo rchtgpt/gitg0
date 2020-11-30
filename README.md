@@ -51,7 +51,7 @@ npm i -g gitg0
 
 ## 🎮 Usage
 
-Currently, we have the following 6 commands which will make you **Good To Go**, `gtg`:
+Currently, we have the following 7 commands which will make you **Good To Go**, `gtg`:
 
 ### `gtg version`
 
