@@ -221,7 +221,7 @@ program
               }
             });
             git.commit(cMsg);
-            console.log("Files have be commited: " + cMsg);
+            console.log("Files have be commited!\nRecent commit message: " + cMsg);
           }, 1000);
         } else {
           exec("git reset -- ./.gitgo", (error, stdout, stderr) => {
@@ -235,7 +235,7 @@ program
             }
           });
           git.commit(cMsg);
-          console.log("Files have be commited: " + cMsg);
+          console.log("Files have be commited!\nRecent commit message: " + cMsg);
         }
       });
     } else {
@@ -279,9 +279,9 @@ program
     );
     console.log(
       "You just need to know 5 simple commands you and then you're " +
-        chalk.bold.cyan("gtg") +
-        ": " +
-        chalk.magenta("Good to Go")
+      chalk.bold.cyan("gtg") +
+      ": " +
+      chalk.magenta("Good to Go")
     );
     console.log(chalk.green("\ngtg config:\n"));
     console.log(
@@ -293,7 +293,7 @@ program
     );
     console.log(chalk.green("\ngtg display:\n"));
     console.log(
-      "This command can be used to display the branch name and commit that the tool will be suggesting for a particular issue once gtg start has been run.\n"
+      "This command can be used to display the branch name and commit that the tool will be suggesting for a particular issue once bin start has been run.\n"
     );
     console.log(chalk.green("\ngtg checkout:\n"));
     console.log(
