@@ -221,7 +221,9 @@ program
               }
             });
             git.commit(cMsg);
-            console.log("Files have be commited!\nRecent commit message: " + cMsg);
+            console.log(
+              "Files have be commited!\nRecent commit message: " + cMsg
+            );
           }, 1000);
         } else {
           exec("git reset -- ./.gitgo", (error, stdout, stderr) => {
@@ -235,7 +237,9 @@ program
             }
           });
           git.commit(cMsg);
-          console.log("Files have be commited!\nRecent commit message: " + cMsg);
+          console.log(
+            "Files have be commited!\nRecent commit message: " + cMsg
+          );
         }
       });
     } else {
@@ -279,9 +283,9 @@ program
     );
     console.log(
       "You just need to know 5 simple commands you and then you're " +
-      chalk.bold.cyan("gtg") +
-      ": " +
-      chalk.magenta("Good to Go")
+        chalk.bold.cyan("gtg") +
+        ": " +
+        chalk.magenta("Good to Go")
     );
     console.log(chalk.green("\ngtg config:\n"));
     console.log(
