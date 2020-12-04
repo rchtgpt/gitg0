@@ -221,7 +221,9 @@ program
               }
             });
             git.commit(cMsg);
-            console.log("Files have be commited!\nRecent commit message: " + cMsg);
+            console.log(
+              "Files have be commited!\nRecent commit message: " + cMsg
+            );
           }, 1000);
         } else {
           exec("git reset -- ./.gitgo", (error, stdout, stderr) => {
@@ -235,7 +237,9 @@ program
             }
           });
           git.commit(cMsg);
-          console.log("Files have be commited!\nRecent commit message: " + cMsg);
+          console.log(
+            "Files have be commited!\nRecent commit message: " + cMsg
+          );
         }
       });
     } else {
