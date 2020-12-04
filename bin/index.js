@@ -278,7 +278,7 @@ program
       "\n"
     );
     console.log(
-      `You just need to know 5 simple commands you and then you're ${chalk.bold.cyan("gtg")} : ${chalk.magenta("Good to Go")}`);
+      `You just need to know 7 simple commands you and then you're ${chalk.bold.cyan("gtg")} : ${chalk.magenta("Good to Go")}`);
     console.log(chalk.green("\ngtg config:\n"));
     console.log(
       "Use this to set up your project's gitgo configuration. You will be asked certain questions regarding your commit and emoji preferences.\n"
