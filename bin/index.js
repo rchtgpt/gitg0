@@ -282,30 +282,41 @@ program
       "\n"
     );
     console.log(
-      "You just need to know 5 simple commands you and then you're " +
-        chalk.bold.cyan("gtg") +
-        ": " +
-        chalk.magenta("Good to Go")
+      `You just need to know 7 simple commands you and then you're ${chalk.bold.cyan(
+        "gtg"
+      )} : ${chalk.magenta("Good to Go")}`
     );
     console.log(chalk.green("\ngtg config:\n"));
     console.log(
-      "This command should be used to personalise your gitgo configuration. You can add your repository's commit and emoticon guidelines.\n"
+      "Use this to set up your project's gitgo configuration. You will be asked certain questions regarding your commit and emoji preferences.\n"
     );
+    console.log(chalk.green("\ngtg version:\n"));
+    console.log(
+      "Use this to check the version of your installed gitg0 package."
+    );
+    console.log(chalk.green("\ngtg whoami:\n"));
+    console.log("I mean,,, you just used me.");
     console.log(chalk.green("\ngtg start:\n"));
     console.log(
-      "Everytime you start working on a new issue, just run this command in order for the tool to know which issue you're working on. After this, the tool will suggest the branch names and commit messages automatically.\n"
+      "Use this before you you start working on a new issue so that we can suggest the branch names and commit messages automatically.\n"
     );
     console.log(chalk.green("\ngtg display:\n"));
     console.log(
-      "This command can be used to display the branch name and commit that the tool will be suggesting for a particular issue once bin start has been run.\n"
+      `Use this to view the suggested branch name and commit title. You can also edit the suggested text based on your preference. This command should be run after ${chalk.yellow(
+        "gg start"
+      )}.\n`
     );
     console.log(chalk.green("\ngtg checkout:\n"));
     console.log(
-      "This is a replacement for git checkout and will simply checkout with the suggested branch name.\n"
+      `This is a replacement for ${chalk.yellow(
+        "git checkout -b"
+      )} and will simply checkout with gitgo's suggested branch name.\n`
     );
     console.log(chalk.green("\ngtg checkout:\n"));
     console.log(
-      "This is a replacement for git commit and will commit your files once added with the suggested commit message.\n"
+      `This is a replacement for ${chalk.yellow(
+        "git checkout -m"
+      )} and will commit your files once added with gitgo's suggested commit message.\n`
     );
   });
 
