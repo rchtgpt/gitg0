@@ -303,7 +303,7 @@ program
     console.log(chalk.green("\ngtg display:\n"));
     console.log(
       `Use this to view the suggested branch name and commit title. You can also edit the suggested text based on your preference. This command should be run after ${chalk.yellow(
-        "gg start"
+        "gtg start"
       )}.\n`
     );
     console.log(chalk.green("\ngtg checkout:\n"));

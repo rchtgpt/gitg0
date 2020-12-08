@@ -1,17 +1,16 @@
 {
   "current_issue": {
-    "number": "62",
+    "number": "",
     "labels": [
-      "bug"
+      ""
     ],
-    "title": "Add (y/N) input checks"
+    "title": ""
   },
   "commit_guidelines": [
-    "cli: ",
-    " general: "
+    "fix #"
   ],
-  "custom_guidelines": true,
-  "selected_commit_type": "✨ Adding a new user-facing feature",
+  "custom_guidelines": false,
+  "selected_commit_type": "",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -30,12 +29,12 @@
     "wip": "construction"
   },
   "existing_branches": [
-    "main"
+    ""
   ],
   "current_branch": [
-    "input-checks"
+    ""
   ],
   "current_commit_message": "",
   "use_emojis": true,
-  "commit_config": true
+  "commit_config": false
 }
