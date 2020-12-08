@@ -91,7 +91,7 @@ Before setting up the project, [download and install Node.js](https://nodejs.org
 After cloning the project, you need to execute the following commands to install and work on the project locally:
 
 ```bash
-# This will install alll the needed dependencies
+# This will install all the needed dependencies
 npm install
 
 # This will install the project from source locally in your system
