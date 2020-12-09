@@ -1,19 +1,13 @@
-#!/usr/bin/env node
-
 const clear = require("clear");
 const figlet = require("figlet");
 const cowsay = require("cowsay");
 const files = require("../lib/files.js");
 const program = require("commander");
-const {
-  getQuestions,
-  getConfigQuestions,
-  displaySuggestions,
-} = require("../lib/inquirer.js");
+const { getQuestions, getConfigQuestions, displaySuggestions } = require("../lib/inquirer.js");
 const simpleGit = require("simple-git");
 const git = simpleGit();
 const { jsonReader } = require("../lib/funcs/jsonReader.js");
-const version = require("../package.json");
+const version = require("../../package.json");
 const chalk = require("chalk");
 const { exec } = require("child_process");
 const fs = require("fs");
@@ -23,7 +17,7 @@ clear();
 program
   .command("start")
   .alias("s")
-  .action(function () {
+  .action(function() {
     // displays Gitg0 on start
     if (files.directoryExists(".git")) {
       console.log(
@@ -49,7 +43,7 @@ program
 program
   .command("config")
   .alias("c")
-  .action(function () {
+  .action(function() {
     // displays Gitg0 on start
     if (files.directoryExists(".git")) {
       console.log(
@@ -59,7 +53,7 @@ program
         }),
         "\n"
       );
-      fs.stat("./.gitgo", function (err, stat) {
+      fs.stat("./.gitgo", function(err, stat) {
         if (err == null) {
           // asks task based questions
           getConfigQuestions();
@@ -120,7 +114,7 @@ program
 program
   .command("display")
   .alias("d")
-  .action(function () {
+  .action(function() {
     // displays Gitg0 on start
     if (files.directoryExists(".git")) {
       console.log(
@@ -147,7 +141,7 @@ program
 program
   .command("checkout")
   .alias("cout")
-  .action(function () {
+  .action(function() {
     // displays Gitg0 on start
     if (files.directoryExists(".git")) {
       console.log(
@@ -162,7 +156,7 @@ program
           console.log("Error reading file:", err);
           return;
         }
-        bName = conf.current_branch;
+        const bName = conf.current_branch;
         git.checkoutLocalBranch(bName);
         console.log("Checked out to new branch: " + bName);
       });
@@ -181,7 +175,7 @@ program
 program
   .command("commit")
   .alias("cmt")
-  .action(function () {
+  .action(function() {
     // displays Gitg0 on start
     if (files.directoryExists(".git")) {
       console.log(
@@ -196,7 +190,7 @@ program
           console.log("Error reading file:", err);
           return;
         }
-        cMsg = conf.current_commit_message;
+        const cMsg = conf.current_commit_message;
         if (conf.commit_config) {
           conf.commit_config = false;
           conf.current_commit_message = "";
@@ -209,7 +203,7 @@ program
           fs.writeFile("./.gitgo", JSON.stringify(conf, null, 2), (err) => {
             if (err) console.log("Error writing file:", err);
           });
-          setTimeout(function () {
+          setTimeout(function() {
             exec("git add ./.gitgo", (error, stdout, stderr) => {
               if (error) {
                 console.log(`error: ${error.message}`);
@@ -221,9 +215,7 @@ program
               }
             });
             git.commit(cMsg);
-            console.log(
-              "Files have be commited!\nRecent commit message: " + cMsg
-            );
+            console.log("Files have be commited!\nRecent commit message: " + cMsg);
           }, 1000);
         } else {
           exec("git reset -- ./.gitgo", (error, stdout, stderr) => {
@@ -237,9 +229,7 @@ program
             }
           });
           git.commit(cMsg);
-          console.log(
-            "Files have be commited!\nRecent commit message: " + cMsg
-          );
+          console.log("Files have be commited!\nRecent commit message: " + cMsg);
         }
       });
     } else {
@@ -257,7 +247,7 @@ program
 program
   .command("version")
   .alias("v")
-  .action(function () {
+  .action(function() {
     // displays Gitg0 on start
     console.log(
       figlet.textSync("Gitg0", {
@@ -272,7 +262,7 @@ program
 program
   .command("whoami")
   .alias("w")
-  .action(function () {
+  .action(function() {
     // displays Gitg0 on start
     console.log(
       figlet.textSync("Gitg0", {
@@ -291,9 +281,7 @@ program
       "Use this to set up your project's gitgo configuration. You will be asked certain questions regarding your commit and emoji preferences.\n"
     );
     console.log(chalk.green("\ngtg version:\n"));
-    console.log(
-      "Use this to check the version of your installed gitg0 package."
-    );
+    console.log("Use this to check the version of your installed gitg0 package.");
     console.log(chalk.green("\ngtg whoami:\n"));
     console.log("I mean,,, you just used me.");
     console.log(chalk.green("\ngtg start:\n"));
