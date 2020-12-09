@@ -1,32 +1,26 @@
 const clear = require("clear");
-const figlet = require("figlet");
 const cowsay = require("cowsay");
 const files = require("../lib/files.js");
 const program = require("commander");
 const { getQuestions, getConfigQuestions, displaySuggestions } = require("../lib/inquirer.js");
-const simpleGit = require("simple-git");
-const git = simpleGit();
+const logLogo = require("../lib/funcs/logLogo");
+const git = require("simple-git")();
 const { jsonReader } = require("../lib/funcs/jsonReader.js");
 const version = require("../../package.json");
 const chalk = require("chalk");
 const { exec } = require("child_process");
 const fs = require("fs");
+import { GitGoConf } from "../types";
 
 clear();
 
 program
   .command("start")
   .alias("s")
-  .action(function() {
+  .action(() => {
     // displays Gitg0 on start
     if (files.directoryExists(".git")) {
-      console.log(
-        figlet.textSync("Gitg0", {
-          horizontalLayout: "default",
-          verticalLayout: "default",
-        }),
-        "\n"
-      );
+      logLogo();
       getQuestions();
     } else {
       // checks if the directory is a git based repo or not
@@ -43,21 +37,15 @@ program
 program
   .command("config")
   .alias("c")
-  .action(function() {
+  .action(async () => {
     // displays Gitg0 on start
     if (files.directoryExists(".git")) {
-      console.log(
-        figlet.textSync("Gitg0", {
-          horizontalLayout: "default",
-          verticalLayout: "default",
-        }),
-        "\n"
-      );
-      fs.stat("./.gitgo", function(err, stat) {
-        if (err == null) {
-          // asks task based questions
-          getConfigQuestions();
-        } else if (err.code === "ENOENT") {
+      try {
+        logLogo();
+        await fs.stat("./.gitgo");
+        getConfigQuestions();
+      } catch (err) {
+        if (err.code === "ENOENT") {
           // file does not exist
           var conf = {
             current_issue: {
@@ -91,16 +79,17 @@ program
             use_emojis: false,
             commit_config: false,
           };
-          fs.writeFile("./.gitgo", JSON.stringify(conf, null, 2), (err) => {
-            if (err) console.log("Error writing file:", err);
-          });
-          getConfigQuestions();
+          try {
+            await fs.writeFile("./.gitgo", JSON.stringify(conf, null, 2));
+            getConfigQuestions();
+          } catch (e) {
+            console.log("Error writing file: ", e);
+          }
         } else {
           console.log("Some other error: ", err.code);
         }
-      });
+      }
     } else {
-      // checks if the directory is a git based repo or not
       console.log(
         cowsay.say({
           text: "Not a git repository!",
@@ -114,16 +103,10 @@ program
 program
   .command("display")
   .alias("d")
-  .action(function() {
+  .action(() => {
     // displays Gitg0 on start
     if (files.directoryExists(".git")) {
-      console.log(
-        figlet.textSync("Gitg0", {
-          horizontalLayout: "default",
-          verticalLayout: "default",
-        }),
-        "\n"
-      );
+      logLogo();
       // asks task based questions
       displaySuggestions();
     } else {
@@ -144,14 +127,8 @@ program
   .action(function() {
     // displays Gitg0 on start
     if (files.directoryExists(".git")) {
-      console.log(
-        figlet.textSync("Gitg0", {
-          horizontalLayout: "default",
-          verticalLayout: "default",
-        }),
-        "\n"
-      );
-      jsonReader("./.gitgo", (err, conf) => {
+      logLogo();
+      jsonReader("./.gitgo", (err: Error, conf: GitGoConf) => {
         if (err) {
           console.log("Error reading file:", err);
           return;
@@ -178,14 +155,8 @@ program
   .action(function() {
     // displays Gitg0 on start
     if (files.directoryExists(".git")) {
-      console.log(
-        figlet.textSync("Gitg0", {
-          horizontalLayout: "default",
-          verticalLayout: "default",
-        }),
-        "\n"
-      );
-      jsonReader("./.gitgo", (err, conf) => {
+      logLogo();
+      jsonReader("./.gitgo", (err: Error, conf: GitGoConf) => {
         if (err) {
           console.log("Error reading file:", err);
           return;
@@ -194,17 +165,19 @@ program
         if (conf.commit_config) {
           conf.commit_config = false;
           conf.current_commit_message = "";
-          conf.current_branch = [""];
+          conf.current_branch = "";
           conf.existing_branches = [""];
           conf.selected_commit_type = "";
-          conf.current_issue.number = "";
-          conf.current_issue.labels = [""];
-          conf.current_issue.title = "";
-          fs.writeFile("./.gitgo", JSON.stringify(conf, null, 2), (err) => {
+          conf.current_issue = {
+            number: undefined,
+            labels: [""],
+            title: "",
+          };
+          fs.writeFile("./.gitgo", JSON.stringify(conf, null, 2), (err: Error) => {
             if (err) console.log("Error writing file:", err);
           });
           setTimeout(function() {
-            exec("git add ./.gitgo", (error, stdout, stderr) => {
+            exec("git add ./.gitgo", (error: Error, stdout: any, stderr: Error) => {
               if (error) {
                 console.log(`error: ${error.message}`);
                 return;
@@ -218,7 +191,7 @@ program
             console.log("Files have be commited!\nRecent commit message: " + cMsg);
           }, 1000);
         } else {
-          exec("git reset -- ./.gitgo", (error, stdout, stderr) => {
+          exec("git reset -- ./.gitgo", (error: Error, stdout: any, stderr: Error) => {
             if (error) {
               console.log(`error: ${error.message}`);
               return;
@@ -249,13 +222,7 @@ program
   .alias("v")
   .action(function() {
     // displays Gitg0 on start
-    console.log(
-      figlet.textSync("Gitg0", {
-        horizontalLayout: "default",
-        verticalLayout: "default",
-      }),
-      "\n"
-    );
+    logLogo();
     console.log("v" + version.version + "-stable");
   });
 
@@ -264,13 +231,7 @@ program
   .alias("w")
   .action(function() {
     // displays Gitg0 on start
-    console.log(
-      figlet.textSync("Gitg0", {
-        horizontalLayout: "default",
-        verticalLayout: "default",
-      }),
-      "\n"
-    );
+    logLogo();
     console.log(
       `You just need to know 7 simple commands you and then you're ${chalk.bold.cyan(
         "gtg"

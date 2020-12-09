@@ -2,14 +2,13 @@
   "name": "gitg0",
   "version": "1.0.1",
   "description": "a magnificent tool to auto-suggest everything you need before pushing a git commit.",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/bin/index.js",
   "files": [
     "dist"
   ],
   "types": "dist/index.d.ts",
   "bin": {
-    "gtg": "./dist/index.cjs.js"
+    "gtg": "./dist/bin/index.js"
   },
   "scripts": {
     "test": "jest",
