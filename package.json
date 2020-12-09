@@ -1,6 +1,6 @@
 {
   "name": "gitg0",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a magnificent tool to auto-suggest everything you need before pushing a git commit.",
   "bin": {
     "gtg": "./bin/index.js"
