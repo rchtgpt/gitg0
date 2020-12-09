@@ -1,6 +1,6 @@
 ![Gitg0_socialify](https://socialify.git.ci/dotrachit/gitg0/image?description=1&descriptionEditable=A%20magnificent%20tool%20to%20auto-suggest%20everything%20you%20need%20before%20pushing%20a%20git%20commit.&font=Raleway&forks=1&issues=1&language=1&pattern=Signal&pulls=1&stargazers=1&theme=Dark)
 
-## Gitg0 🚀 
+## Gitg0 🚀
 
 [![NPM](https://nodei.co/npm/gitg0.png)](https://npmjs.org/package/gitg0)
 
@@ -89,8 +89,7 @@ Unless you explicitly state otherwise, any contribution intentionally submitted 
 
 ## Maintainers
 
-* [Yash Khare](https://github.com/yashk2000)
-* [Rachit Gupta](https://github.com/dotrachit)
-* [Shambhavi Aggarwal](https://github.com/agg-shambhavi)
-* [Preet Shah](https://github.com/shahpreetk)
-
+- [Yash Khare](https://github.com/yashk2000)
+- [Rachit Gupta](https://github.com/dotrachit)
+- [Shambhavi Aggarwal](https://github.com/agg-shambhavi)
+- [Preet Shah](https://github.com/shahpreetk)
