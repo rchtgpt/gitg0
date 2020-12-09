@@ -3,7 +3,7 @@ const cowsay = require("cowsay");
 const files = require("../lib/files.js");
 const program = require("commander");
 const { getQuestions, getConfigQuestions, displaySuggestions } = require("../lib/inquirer.js");
-const logLogo = require("../lib/funcs/logLogo");
+import logLogo from "../lib/funcs/logLogo";
 const git = require("simple-git")();
 const { jsonReader } = require("../lib/funcs/jsonReader.js");
 const version = require("../../package.json");

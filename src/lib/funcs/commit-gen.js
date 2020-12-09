@@ -3,7 +3,7 @@ const fs = require("fs");
 const reader = require("./jsonReader");
 const { Console } = require("console");
 
-stopwords = ["a", "the"];
+const stopwords = ["a", "the"];
 
 const suggestCommitMsgCb = (conf) => {
   const issue_labels = conf.current_issue.labels;
