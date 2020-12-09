@@ -26,7 +26,7 @@ Then, you can install it by simple running the following command:
 npm i -g gitg0
 ```
 
-## 🎮 Commands
+## Commands
 
 Currently, we have the following 7 commands:
 
