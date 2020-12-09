@@ -1,4 +1,4 @@
-![gitg0](https://socialify.git.ci/dotrachit/gitg0/image?description=1&descriptionEditable=A%20magnificent%20tool%20to%20auto-suggest%20everything%20you%20need%20before%20pushing%20a%20git%20commit.&font=Raleway&forks=1&issues=1&language=1&pattern=Signal&pulls=1&stargazers=1&theme=Dark)
+![Gitg0_socialify](https://socialify.git.ci/dotrachit/gitg0/image?description=1&descriptionEditable=A%20magnificent%20tool%20to%20auto-suggest%20everything%20you%20need%20before%20pushing%20a%20git%20commit.&font=Raleway&forks=1&issues=1&language=1&pattern=Signal&pulls=1&stargazers=1&theme=Dark)
 
 ## Gitg0 🚀 
 
@@ -8,12 +8,19 @@
 ![Synk](https://github.com/dotrachit/gitg0/workflows/Snyk/badge.svg)
 ![Prettier Linter](https://github.com/dotrachit/gitg0/workflows/Prettier%20Linter/badge.svg)
 
+**Gitg0 generates commit titles (with relevant emojis) and branch names for you.** You have the ability to configure the format of the Sugggested Commit Titles and Branch Names, and change emojis according to your preference in the `.gitgo` file.
+
+## Usage
+
+Not to shout at you but **PLEASE HEAD OVER TO [USAGE.md](https://github.com/dotrachit/gitg0/blob/main/USAGE.md)**
+
 ## Installation
 
-The tool is available as an npm package over [here](https://www.npmjs.com/package/gitg0).
+The tool is available as an NPM package over [here](https://www.npmjs.com/package/gitg0).
 
-Before installing the package, [download and install Node.js](https://nodejs.org/en/download/)<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>.
-Then you can install it by simple running the following command:
+Before installing the package, [download and install Node.js](https://nodejs.org/en/download/).
+
+Then, you can install it by simple running the following command:
 
 ```bash
 npm i -g gitg0
@@ -21,7 +28,7 @@ npm i -g gitg0
 
 ## 🎮 Commands
 
-Currently, we have the following 7 commands which will make you **Good To Go**, `gtg`:
+Currently, we have the following 7 commands:
 
 ### `gtg config`
 
@@ -58,9 +65,9 @@ This is a replacement for `git commit -m` and will commit your files once added 
 - Continue reading the rest of the README to get the build instructions.
 - For detailed information and screenshots of the project, please head over to the project [wiki](https://github.com/dotrachit/gitg0/wiki).
 
-## Setting up the project
+## Development setup
 
-Before setting up the project, [download and install Node.js](https://nodejs.org/en/download/)<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>.
+Before setting up the project, [download and install Node.js](https://nodejs.org/en/download/).
 
 After cloning the project, you need to execute the following commands to install and work on the project locally:
 
@@ -72,13 +79,6 @@ npm install
 npm install -g ./
 ```
 
-## Maintainers
-
-* [Yash Khare](https://github.com/yashk2000)
-* [Rachit Gupta](https://github.com/dotrachit)
-* [Shambhavi Aggarwal](https://github.com/agg-shambhavi)
-* [Preet Shah](https://github.com/shahpreetk)
-
 ## License
 
 This project is released under a free and open-source software license, GPL-3.0 License ([LICENSE](LICENSE). The documentation is also released under a free documentation license, namely the [GFDL v1.3](https://www.gnu.org/licenses/fdl-1.3.en.html) license or later.
@@ -86,3 +86,11 @@ This project is released under a free and open-source software license, GPL-3.0 
 ## Contributions
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the GPL-3.0 License, shall be licensed as above, without any additional terms or conditions.
+
+## Maintainers
+
+* [Yash Khare](https://github.com/yashk2000)
+* [Rachit Gupta](https://github.com/dotrachit)
+* [Shambhavi Aggarwal](https://github.com/agg-shambhavi)
+* [Preet Shah](https://github.com/shahpreetk)
+
