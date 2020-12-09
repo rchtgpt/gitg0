@@ -30,31 +30,31 @@ npm i -g gitg0
 
 Currently, we have the following 7 commands:
 
-### `gtg config`
+#### `gtg config`
 
 Use this to set up your project's gitgo configuration. You will be asked certain questions regarding your commit and emoji preferences.
 
-### `gtg version`
+#### `gtg version`
 
 Use this to check the version of your installed gitg0 package.
 
-### `gtg whoami`
+#### `gtg whoami`
 
 Use this to get the list of commands along with their functions.
 
-### `gtg start`
+#### `gtg start`
 
 Use this before you you start working on a new issue so that we can suggest the branch names and commit messages automatically.
 
-### `gtg display`
+#### `gtg display`
 
 Use this to view the suggested branch name and commit title. You can also edit the suggested text based on your preference. This command should be run after `gtg start`.
 
-### `gtg checkout`
+#### `gtg checkout`
 
 This is a replacement for `git checkout -b` and will simply checkout with gitgo's suggested branch name.
 
-### `gtg commit`
+#### `gtg commit`
 
 This is a replacement for `git commit -m` and will commit your files once added with gitgo's suggested commit message.
 
