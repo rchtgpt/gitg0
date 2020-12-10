@@ -1,6 +1,6 @@
 {
   "name": "gitg0",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "a magnificent tool to auto-suggest everything you need before pushing a git commit.",
   "bin": {
     "gtg": "./bin/index.js"
@@ -17,7 +17,7 @@
     "CLI"
   ],
   "author": "Rachit Gupta",
-  "license": "ISC",
+  "license": "GNU GPL V3",
   "bugs": {
     "url": "https://github.com/dotrachit/gitg0/issues"
   },

@@ -1,16 +1,16 @@
 {
   "current_issue": {
-    "number": "",
+    "number": "68",
     "labels": [
-      ""
+      "documentation"
     ],
-    "title": ""
+    "title": "License Query"
   },
   "commit_guidelines": [
     "fix #"
   ],
   "custom_guidelines": false,
-  "selected_commit_type": "",
+  "selected_commit_type": "📝 Writing docs",
   "emojis": {
     "initial_commit": "tada",
     "feature": "sparkles",
@@ -28,13 +28,11 @@
     "cleanup": "fire",
     "wip": "construction"
   },
-  "existing_branches": [
-    ""
-  ],
+  "existing_branches": [],
   "current_branch": [
-    ""
+    "license-query"
   ],
-  "current_commit_message": "",
+  "current_commit_message": "📝 fix #68 License Query",
   "use_emojis": true,
   "commit_config": false
 }
